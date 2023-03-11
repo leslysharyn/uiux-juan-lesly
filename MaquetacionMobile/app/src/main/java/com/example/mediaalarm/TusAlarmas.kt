@@ -1,27 +1,43 @@
 package com.example.mediaalarm
 
-import android.os.Bundle
-import com.google.android.material.appbar.CollapsingToolbarLayout
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mediaalarm.databinding.ListaAlarmasBinding
+import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ListView
+import android.widget.Toast
+import com.example.mediaalarm.ui.MainActivity
 
-class TusAlarmas : AppCompatActivity() {
+class TusAlarmas : AppCompatActivity(), AdapterView.OnItemClickListener {
 
-    private lateinit var binding: ListaAlarmasBinding
+    private var listView:ListView? = null
+    private var itemAlarmAdapter:ItemAlarmAdapter? = null
+    private var arrayList:ArrayList<ItemAlarmList>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_tus_alarmas)
 
-        binding = ListaAlarmasBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        listView= findViewById(R.id.card_list_view)
+        arrayList = ArrayList()
+        arrayList = SetDataItem()
+        itemAlarmAdapter= ItemAlarmAdapter(applicationContext, arrayList!!)
+        listView?.adapter = itemAlarmAdapter
+        listView?.onItemClickListener = this
+    }
 
-        setSupportActionBar(findViewById(R.id.toolbar))
-        binding.toolbarLayout.title = title
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+    private fun SetDataItem ():ArrayList<ItemAlarmList>{
+
+        var listItem:ArrayList<ItemAlarmList> = ArrayList()
+        listItem.add(ItemAlarmList("Tomar Pastilla", "7:00am"))
+        listItem.add(ItemAlarmList("Trabajo", "9:00am"))
+        listItem.add(ItemAlarmList("Cita Medica", "11:00am"))
+        return  listItem
+    }
+
+    override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+        val intent = Intent(this@TusAlarmas, MainActivity::class.java)
+        startActivity(intent)
     }
 }
