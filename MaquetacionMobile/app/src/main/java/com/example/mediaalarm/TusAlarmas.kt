@@ -5,9 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
+import android.widget.Button
 import android.widget.ListView
-import android.widget.Toast
-import com.example.mediaalarm.ui.MainActivity
 
 class TusAlarmas : AppCompatActivity(), AdapterView.OnItemClickListener {
 
@@ -18,7 +17,11 @@ class TusAlarmas : AppCompatActivity(), AdapterView.OnItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tus_alarmas)
-
+        val button: Button = findViewById(R.id.btagregarAlarma)
+        button.setOnClickListener {
+            val intent = Intent(this@TusAlarmas, CreateEditAlarma::class.java)
+            startActivity(intent)
+        }
         listView= findViewById(R.id.card_list_view)
         arrayList = ArrayList()
         arrayList = SetDataItem()
@@ -37,7 +40,7 @@ class TusAlarmas : AppCompatActivity(), AdapterView.OnItemClickListener {
     }
 
     override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        val intent = Intent(this@TusAlarmas, MainActivity::class.java)
+        val intent = Intent(this@TusAlarmas, CreateEditAlarma::class.java)
         startActivity(intent)
     }
 }

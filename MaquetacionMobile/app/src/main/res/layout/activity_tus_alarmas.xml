@@ -81,7 +81,7 @@
             <ListView
                 android:id="@+id/card_list_view"
                 android:layout_width="match_parent"
-                android:layout_height="608dp">
+                android:layout_height="357dp">
 
             </ListView>
 
