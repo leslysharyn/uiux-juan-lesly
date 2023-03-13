@@ -9,7 +9,8 @@
     <div class="selected"></div>
     <div class="options">
         <div class="menu_item">
-            <a>Alarmas</a>
+            <a routerLink="/my-alarms">Alarmas</a>
+            <router-outlet></router-outlet>
         </div>
         <div class="menu_item">
             <a routerLink="/multimedia">Multimedia</a>
@@ -20,8 +21,7 @@
             <router-outlet></router-outlet>
         </div>
         <div class="menu_item">
-            <a routerLink="/sync">Sincronización</a>
-            <router-outlet></router-outlet>
+            <a>Sincronización</a>
         </div>
     </div>
     <button routerLink="" class="button">Cerrar sesión</button>

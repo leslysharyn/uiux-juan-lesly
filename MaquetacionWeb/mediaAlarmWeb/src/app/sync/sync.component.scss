@@ -51,13 +51,14 @@
 
 .selected {
     position: relative;
-    width: 180px;
+    width: 270px;
     height: 71px;
+    left: 540px;
     background: rgba(225, 43, 43, 0.4);
     z-index: -1;
 }
 
-.menu_item:nth-child(1) {
+.menu_item:nth-child(4) {
     color: #000000;
   }
 
