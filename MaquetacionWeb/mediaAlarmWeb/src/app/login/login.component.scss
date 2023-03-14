@@ -1,0 +1,191 @@
+.title_container {
+    display: flex;
+    justify-content: center; /* horizontally center child elements */
+    align-items: center; /* vertically center child elements */
+    align-items: flex-end; /* align child elements to the bottom */
+    margin-bottom: 40px;
+}
+.title_container img {
+    max-width: 100%; /* make sure the image doesn't overflow its container */
+    margin: 0;
+}
+.title_container h1 {
+    margin: 0; /* remove default margin */
+}
+.logo{
+    width: 159px;
+    height: 97px;
+}
+
+.titulo{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #CC3055;
+    margin: 0;
+}
+
+.subtitle_container {
+    display: flex;
+    justify-content: center; /* horizontally center child elements */
+    align-items: center; /* vertically center child elements */
+    align-items: flex-end; /* align child elements to the bottom */
+    margin-bottom: 20px;
+}
+
+.subtitle_container h2 {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 76px;
+    color: #000000;
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 311px;
+    background: rgba(225, 43, 43, 0.4);
+    border-radius: 9px 2px 155px;
+    margin: auto;
+    z-index: 1;
+}
+
+.text-field-correo {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: 280px;
+    height: 66px;
+    z-index: 2;
+    top: -275px;
+    margin: 0 auto;
+  }
+  
+  .text-field-correo label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .text-field-correo input {
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  .text-field-cont {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: 280px;
+    height: 66px;
+    z-index: 2;
+    top: -245px;
+    margin: 0 auto;
+  }
+  
+  .text-field-cont label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .text-field-cont input {
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding: 10px 16px;
+    gap: 10px;
+    width: 155px;
+    height: 56px;
+    background: #005A9E;
+    border-radius: 2px;
+    margin: 0 auto;
+    top: -220px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+  }
+  .button:hover {
+    background-color: #004578; /* Change the button's background color on hover */
+  }
+
+  .square2{
+    position: relative;
+    width: 690px;
+    height: 198px;
+    top: -130px;
+    background: rgba(225, 43, 43, 0.4);
+    z-index: 1;
+    margin: 0 auto;
+}
+  
+.text-field-app{
+    position: relative;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    top: -325px;
+    z-index: 2;
+    max-width: 665px;
+    color: #000000;
+}
+
+.text-field-app p {
+    text-align: left; /* align the text to the left */
+    margin: 0;
+    padding: 0;
+}
+
+.text-field-app p {
+    line-height: 2.7;
+}
+
+.stores_container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    top: -360px;
+    z-index: 3;
+}
+
+.appStore {
+    margin: 0 20px;
+  }

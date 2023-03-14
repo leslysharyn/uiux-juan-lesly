@@ -1,0 +1,32 @@
+<!-- HEADER STARTS HERE -->
+
+<div class="title_container">
+    <img class="logo" src="assets/images/logo.png" alt="Image">
+    <h1 class="titulo">MediaAlarm</h1>
+</div>
+
+<div class="menu">
+    <div class="selected"></div>
+    <div class="options">
+        <div class="menu_item">
+            <a routerLink="/my-alarms">Alarmas</a>
+            <router-outlet></router-outlet>
+        </div>
+        <div class="menu_item">
+            <a routerLink="/multimedia">Multimedia</a>
+            <router-outlet></router-outlet>
+        </div>
+        <div class="menu_item">
+            <a routerLink="/settings">Ajustes</a>
+            <router-outlet></router-outlet>
+        </div>
+        <div class="menu_item">
+            <a>Sincronización</a>
+        </div>
+    </div>
+    <button routerLink="" class="button">Cerrar sesión</button>
+    <router-outlet></router-outlet>
+</div>
+
+
+<!-- HEADER ENDS HERE -->
