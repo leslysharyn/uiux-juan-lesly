@@ -9,111 +9,6 @@
     tools:context=".CreateEditAlarma">
 
     <LinearLayout
-        android:id="@+id/datepicker1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/fragment_createalarm_recurring_options"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TimePicker
-            android:id="@+id/timePicker1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="20dp"
-            android:timePickerMode="spinner" />
-
-        <TextView
-            android:id="@+id/chooseDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="5dp"
-            android:fontFamily="@font/segoeui"
-            android:text="Fecha Alarma"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-
-        <EditText
-            android:id="@+id/editTextDate2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="date" />
-
-        <CheckBox
-            android:id="@+id/fragment_createalarm_recurring"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Recurring Alarm"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_title" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/fragment_createalarm_recurring_options"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/scrollable"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/datepicker1">
-
-        <CheckBox
-            android:id="@+id/fragment_createalarm_checkMon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mon" />
-
-        <CheckBox
-            android:id="@+id/fragment_createalarm_checkTue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tue" />
-
-        <CheckBox
-            android:id="@+id/fragment_createalarm_checkWed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wed" />
-
-        <CheckBox
-            android:id="@+id/fragment_createalarm_checkThu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Thu" />
-
-        <CheckBox
-            android:id="@+id/fragment_createalarm_checkFri"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fri" />
-
-        <CheckBox
-            android:id="@+id/fragment_createalarm_checkSat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sat" />
-
-        <CheckBox
-            android:id="@+id/fragment_createalarm_checkSun"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sun" />
-
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/scrollable"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -133,18 +28,409 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/newtext"
+                <LinearLayout
+                    android:id="@+id/datepicker1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="60dp"
+                    android:orientation="vertical">
+
+
+                    <TimePicker
+                        android:id="@+id/timePicker1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginTop="20dp"
+                        android:theme="@style/MyBase.TimePicker"
+                        android:timePickerMode="spinner" />
+
+                    <TextView
+                        android:id="@+id/chooseDate"
+                        android:layout_width="103dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/segoeui"
+                        android:text="Fecha Alarma"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/editTextDate2"
+                        android:layout_width="155dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/datefield"
+                        android:drawableEnd="@drawable/ic_baseline_calendar_month_24"
+                        android:ems="10"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
+                        android:hint="Seleccione Fecha"
+                        android:inputType="date"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"
+                        tools:text="Seleccione Fecha" />
+
+                    <Switch
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:checked="true"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="left"
+                        android:text="Repetir"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" /><!--gravity of the Switch-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_createalarm_recurring_options"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="55dp"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <CheckBox
+                        android:id="@+id/fragment_createalarm_checkMon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:text=" L "
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/fragment_createalarm_checkTue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:text=" M "
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/fragment_createalarm_checkWed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:text=" M "
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/fragment_createalarm_checkThu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:text=" J "
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/fragment_createalarm_checkFri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:text=" V "
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/fragment_createalarm_checkSat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:text=" S "
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/fragment_createalarm_checkSun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:text=" D "
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/chooseDate5"
+                        android:layout_width="103dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/segoeui"
+                        android:text="Fecha Inicio"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/chooseDate4"
+                        android:layout_width="103dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/segoeui"
+                        android:paddingEnd="10dp"
+                        android:text="Fecha Final"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingEnd="10dp">
+
+                    <EditText
+                        android:id="@+id/editTextDate8"
+                        android:layout_width="155dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/datefield"
+                        android:drawableEnd="@drawable/ic_baseline_calendar_month_24"
+                        android:ems="10"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
+                        android:hint="Seleccione Fecha"
+                        android:inputType="date"
+                        android:minHeight="48dp"
+                        android:textSize="14sp"
+                        tools:text="Seleccione Fecha" />
+
+                    <EditText
+                        android:id="@+id/editTextDate7"
+                        android:layout_width="155dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/datefield"
+                        android:drawableEnd="@drawable/ic_baseline_calendar_month_24"
+                        android:ems="10"
+                        android:fontFamily="@font/segoeui"
+                        android:gravity="center_vertical"
+                        android:hint="Seleccione Fecha"
+                        android:inputType="date"
+                        android:minHeight="48dp"
+                        android:paddingEnd="5dp"
+                        android:paddingRight="5dp"
+                        android:textSize="14sp"
+                        tools:text="Seleccione Fecha" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/chooseDate6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="25dp"
                     android:layout_marginBottom="5dp"
                     android:fontFamily="@font/segoeui"
-                    android:text="Email"
+                    android:text="Frecuencia de Repetición"
                     android:textColor="@color/black"
-                    android:textSize="14sp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName7"
+                    android:layout_width="366dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/datefield"
+                    android:contentDescription="@string/prompt_email"
+                    android:ems="10"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:text="Nombre de la Alarma"
+                    android:textColor="#201F1E"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName8"
+                    android:layout_width="match_parent"
+                    android:layout_height="82dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/datefield"
+                    android:ems="10"
+                    android:fontFamily="@font/segoeui"
+                    android:inputType="textPersonName"
+                    android:text="Descripción"
+                    android:textColor="#201F1E"
+                    android:textSize="14sp" />
+
+                <Switch
+                    android:id="@+id/switch7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:checked="true"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="left"
+                    android:text="Activar Lectura de Descripción"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/switch8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:checked="true"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="left"
+                    android:text="Sonido de Alarma"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/switch9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:checked="true"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="left"
+                    android:text="Vibración"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/switch10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:checked="true"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="left"
+                    android:text="Grabar nota de voz"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/switch11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:checked="true"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="left"
+                    android:text="Agregar Imagen"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/switch12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:checked="true"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="left"
+                    android:text="Agregar en festivos. Esta configuración la puede hacer en la página web"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnlogin2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginEnd="120dp"
+                        android:background="@drawable/buttonbackground"
+                        android:fontFamily="@font/segoeui"
+                        android:text="Guardar"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="Iniciar Sesión" />
+
+                    <Button
+                        android:id="@+id/btnlogin3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginEnd="120dp"
+                        android:layout_weight="1"
+                        android:background="@color/background_variant"
+                        android:fontFamily="@font/segoeui"
+                        android:text="Cancelar"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="Iniciar Sesión" />
+                </LinearLayout>
+
 
             </LinearLayout>
 

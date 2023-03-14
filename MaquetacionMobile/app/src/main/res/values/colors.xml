@@ -10,4 +10,5 @@
     <color name="MediaAlarmRed">#CC3055</color>
     <color name="grayfield">#8A8886</color>
     <color name="textColorPrimary">#FF000000</color>
+    <color name="toggleblue">#0078D4</color>
 </resources>

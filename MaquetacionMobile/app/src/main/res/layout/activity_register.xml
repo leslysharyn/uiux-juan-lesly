@@ -112,6 +112,7 @@
                 android:fontFamily="@font/segoeui"
                 android:inputType="textPersonName"
                 android:text="Contraseña"
+                android:textColor="#201F1E"
                 android:textSize="14sp" />
 
             <TextView
@@ -140,6 +141,7 @@
                 android:fontFamily="@font/segoeui"
                 android:inputType="textPersonName"
                 android:text="@string/prompt_email"
+                android:textColor="#201F1E"
                 android:textSize="14sp" />
 
             <TextView
@@ -166,6 +168,7 @@
                 android:fontFamily="@font/segoeui"
                 android:inputType="textPersonName"
                 android:text="Contraseña"
+                android:textColor="#201F1E"
                 android:textSize="14sp" />
 
             <TextView
@@ -193,6 +196,7 @@
                 android:fontFamily="@font/segoeui"
                 android:inputType="textPersonName"
                 android:text="@string/prompt_email"
+                android:textColor="#201F1E"
                 android:textSize="14sp" />
 
             <TextView
@@ -220,6 +224,7 @@
                 android:fontFamily="@font/segoeui"
                 android:inputType="textPersonName"
                 android:text="@string/prompt_email"
+                android:textColor="#201F1E"
                 android:textSize="14sp" />
 
             <Button
