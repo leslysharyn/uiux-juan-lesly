@@ -114,3 +114,228 @@
 }
 
 /* HEADER ENDS HERE */
+
+.subtitulo{
+    position: relative;
+    width: 234px;
+    height: 60px;
+    left: 75px;
+    top: -50px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+
+}
+
+.dias{
+    position: relative;
+    left: 160px;
+    top: -60px;
+    white-space: nowrap;
+}
+
+.dias_item{
+    position: relative;
+    width: auto;
+    height: 25px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    color: #000000;
+    display: inline-block;
+    top: 12px;
+    margin-right: 135px;
+}
+
+.circle_item {
+    position: relative;
+    display: inline-block;
+    margin-right: 1200px;
+}
+
+.calendar_circle {
+    position: relative;
+    left: 30px;
+    white-space: nowrap;
+}
+
+.circle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #F3F2F1;
+    border-radius: 50%;
+    z-index: -1;
+}
+.arrow{
+    position: absolute;
+    color: #201F1E;
+    font-family: 'Fabric MDL2 Assets';
+    font-style: normal;
+    font-weight: bolder;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    left: 10px;
+    top: 10px;
+}
+
+
+.alarma{
+    position: relative;
+    left: 150px;
+    top: -90px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.alarma_item{
+    position: relative;
+    width: auto;
+    height: 25px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    color: #000000;
+    display: inline-block;
+    top: 12px;
+    margin-right: 45px;
+}
+
+.alarma_item_info{
+    position: relative;
+    width: 194px;
+    height: 29px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #201F1E;
+    display: inline-block;
+    top: 12px;
+    margin-right: 0px;
+    align-self: stretch;
+    border: #000000;
+    border: thin solid;
+    padding-left: 6px;
+    padding-top: 3px;
+}
+
+.alarma_item_info1{
+    position: relative;
+    width: 29px;
+    height: 29px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #201F1E;
+    display: inline-block;
+    top: 12px;
+    margin-right: 0px;
+    align-self: stretch;
+    border: #000000;
+    border: thin solid;
+    border-left: none;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.alarma1{
+    position: relative;
+    left:419px;
+    top: -90px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.square{
+    position: relative;
+    width: 800px;
+    height: 472px;
+    background: rgba(225, 43, 43, 0.4);
+    border-radius: 9px 2px 155px;
+    left: 300PX;
+    top: -50PX;
+}
+
+.create_alarm{
+    position: relative;
+    margin: 0 auto;
+    left: 330PX;
+    top: -500PX;
+    white-space: nowrap;
+}
+
+.create_alarm_item{
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.agregarAlarma{
+    position: relative;
+    width: 279px;
+    height: 60px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.agregarAlarma_info{
+    position: relative;
+    width: 456px;
+    height: 25px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+input[type="time"] {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    position: absolute;
+    height: 30px;
+    margin: 0 auto;
+    left: 390PX;
+    top: 590PX;
+    background: #FFFFFF;
+    border: 1px solid #8A8886;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+label{
+    position: relative;
+    width: 51px;
+    height: 25px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0 auto;
+    left: 330PX;
+    top: -480PX;
+    white-space: nowrap;
+}
