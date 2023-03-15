@@ -107,6 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
@@ -167,13 +168,14 @@
 
             <Button
                 android:id="@+id/btnlogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="117dp"
+                android:layout_height="36dp"
                 android:layout_marginStart="120dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginEnd="120dp"
                 android:background="@drawable/buttonbackground"
                 android:fontFamily="@font/segoeui"
+                android:gravity="center"
                 android:text="Iniciar Sesión"
                 android:textAlignment="center"
                 android:textAllCaps="false"
@@ -190,6 +192,7 @@
         android:id="@+id/registerbutton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -211,11 +214,12 @@
 
         <Button
             android:id="@+id/registerbtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="115dp"
+            android:layout_height="36dp"
             android:layout_marginStart="135dp"
             android:layout_marginTop="0dp"
             android:layout_marginEnd="135dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/buttonbackground"
             android:backgroundTint="@color/buttonDark"
             android:fontFamily="@font/roboto_medium"
