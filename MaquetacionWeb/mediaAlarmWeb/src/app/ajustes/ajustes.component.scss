@@ -268,7 +268,6 @@
   color: #ffffff;
 }
 
-
 .days-container {
   box-sizing: border-box;
 
@@ -393,13 +392,13 @@
   }
 }
 
-.lectura-alarma{
+.lectura-alarma {
   position: absolute;
   width: 436px;
   height: 60px;
   left: -90px;
   top: 120px;
-  font-family: 'Segoe UI';
+  font-family: "Segoe UI";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -407,105 +406,101 @@
   color: #000000;
 }
 
-.lectura-alarma-container{
+.lectura-alarma-container {
   box-sizing: border-box;
   position: absolute;
   width: 746px;
   height: 149px;
   left: -90px;
   top: 170px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #000000;
 }
 
-.configura-voz{
-
-position: absolute;
-width: 667px;
-height: 60px;
-left: -60px;
-top: 210px;
-font-family: 'Segoe UI';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-color: #000000;
-}
-
-.voz{
+.configura-voz {
   position: absolute;
-width: 51px;
-height: 25px;
-left: -30px;
-top: 270px;
-font-family: 'Segoe UI';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-color: #000000;
+  width: 667px;
+  height: 60px;
+  left: -60px;
+  top: 210px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
 }
 
-
+.voz {
+  position: absolute;
+  width: 51px;
+  height: 25px;
+  left: -30px;
+  top: 270px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
 
 .select-voz {
   position: absolute;
-width: 201px;
-height: 32px;
-left: 40px;
-top: 270px;
+  width: 201px;
+  height: 32px;
+  left: 40px;
+  top: 270px;
 
-border-radius: 6px;
+  border-radius: 6px;
 }
 
-.button-aplicar{
+.button-aplicar {
   left: 350px;
   top: 265px;
 }
 
-.button-reestablecer{
+.button-reestablecer {
   display: flex;
-flex-direction: row;
-align-items: center;
-padding: 6px 20px;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 20px;
 
-position: absolute;
-width: 121px;
-height: 32px;
-left: 487px;
-top: 265px;
-background: #323130;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 2px;
-color: #FFFFFF;
-
+  position: absolute;
+  width: 121px;
+  height: 32px;
+  left: 487px;
+  top: 265px;
+  background: #323130;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  color: #ffffff;
 }
 
-.button-guardar{
+.button-guardar {
   display: flex;
-flex-direction: row;
-align-items: center;
-padding: 10px 16px;
-gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 10px;
 
-position: absolute;
-width: 189px;
-height: 79px;
-left: 788px;
-top: 229px;
-background: #005A9E;
-border-radius: 2px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #FFFFFF;
-flex: none;
-order: 0;
-flex-grow: 0;
+  position: absolute;
+  width: 189px;
+  height: 79px;
+  left: 788px;
+  top: 229px;
+  background: #005a9e;
+  border-radius: 2px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
