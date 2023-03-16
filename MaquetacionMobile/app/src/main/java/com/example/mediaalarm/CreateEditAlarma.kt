@@ -25,6 +25,16 @@ class CreateEditAlarma : AppCompatActivity() {
             val intent = Intent(this@CreateEditAlarma, TusAlarmas::class.java)
             startActivity(intent)
         }
+        val buttonmic: Button = findViewById(R.id.mic_button)
+        buttonmic.setOnClickListener {
+            val intent = Intent(this@CreateEditAlarma, NotaVoz::class.java)
+            startActivity(intent)
+        }
+        val buttonimage: Button = findViewById(R.id.image_button)
+        buttonimage.setOnClickListener {
+            val intent = Intent(this@CreateEditAlarma, Gallery::class.java)
+            startActivity(intent)
+        }
     }
 
 }

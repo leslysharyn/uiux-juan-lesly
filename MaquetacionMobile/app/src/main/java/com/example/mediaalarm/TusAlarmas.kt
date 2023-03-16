@@ -45,7 +45,7 @@ class TusAlarmas : AppCompatActivity(), AdapterView.OnItemClickListener {
     }
 
     override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        val intent = Intent(this@TusAlarmas, CreateEditAlarma::class.java)
+        val intent = Intent(this@TusAlarmas, AlarmActive::class.java)
         startActivity(intent)
     }
 }

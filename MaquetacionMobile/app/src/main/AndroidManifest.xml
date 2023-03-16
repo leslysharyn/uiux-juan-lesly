@@ -13,10 +13,37 @@
         android:theme="@style/MediaAlarm"
         tools:targetApi="31">
         <activity
+            android:name=".AlarmActive"
+            android:exported="false"
+            android:label=" "
+            android:theme="@style/MediaAlarm">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TusAlarmas" />
+        </activity>
+        <activity
+            android:name=".Gallery"
+            android:exported="false"
+            android:label="Galería de Imágenes"
+            android:theme="@style/MediaAlarm">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CreateEditAlarma" />
+        </activity>
+        <activity
+            android:name=".NotaVoz"
+            android:exported="false"
+            android:label="Graba tu nota de voz"
+            android:theme="@style/MediaAlarm">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CreateEditAlarma" />
+        </activity>
+        <activity
             android:name=".Settings"
             android:exported="false"
-            android:theme="@style/MediaAlarm"
-            android:label="Configuraciones" >
+            android:label="Configuraciones"
+            android:theme="@style/MediaAlarm">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TusAlarmas" />
@@ -24,8 +51,8 @@
         <activity
             android:name=".CreateEditAlarma"
             android:exported="false"
-            android:theme="@style/MediaAlarm"
-            android:label="Crear Alarma">
+            android:label="Crear Alarma"
+            android:theme="@style/MediaAlarm">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TusAlarmas" />
@@ -33,16 +60,16 @@
         <activity
             android:name=".TusAlarmas"
             android:exported="false"
-            android:theme="@style/MediaAlarm"
-            android:label="Tus Alarmas">
+            android:label="Tus Alarmas"
+            android:theme="@style/MediaAlarm">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.MainActivity" />
         </activity>
         <activity
             android:name=".Register"
-            android:theme="@style/MediaAlarm"
-            android:label="Registrarse">
+            android:label="Registrarse"
+            android:theme="@style/MediaAlarm">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.MainActivity" />

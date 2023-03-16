@@ -377,7 +377,7 @@
                     android:track="@drawable/track_selector" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/mic_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
@@ -405,7 +405,7 @@
                     android:track="@drawable/track_selector" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/image_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
