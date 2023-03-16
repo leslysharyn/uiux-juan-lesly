@@ -4,7 +4,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background">#66E12B2B</color>
+    <color name="background">#f3aaaa</color>
     <color name="background_variant">#CC3055</color>
     <color name="buttonDark">#005A9E</color>
     <color name="MediaAlarmRed">#CC3055</color>

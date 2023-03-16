@@ -22,6 +22,11 @@ class TusAlarmas : AppCompatActivity(), AdapterView.OnItemClickListener {
             val intent = Intent(this@TusAlarmas, CreateEditAlarma::class.java)
             startActivity(intent)
         }
+        val buttonconf: Button = findViewById(R.id.configuracion)
+        buttonconf.setOnClickListener {
+            val intent = Intent(this@TusAlarmas, Settings::class.java)
+            startActivity(intent)
+        }
         listView= findViewById(R.id.card_list_view)
         arrayList = ArrayList()
         arrayList = SetDataItem()

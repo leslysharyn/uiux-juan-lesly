@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:layout_marginTop="60dp"
     android:background="@color/white"
-    tools:context=".CreateEditAlarma">
+    tools:context=".CreateEditAlarma"
+    android:id="@+id/TusAlarmas">
 
     <LinearLayout
         android:id="@+id/scrollable"
@@ -16,7 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_recurring_options">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -40,9 +41,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginLeft="85dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="60dp"
                         android:layout_marginTop="20dp"
-                        android:theme="@style/MyBase.TimePicker"
+                        android:theme="@style/MediaAlarm.TimePicker"
                         android:timePickerMode="spinner" />
 
                     <TextView
@@ -82,13 +84,17 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="30dp"
                         android:layout_marginBottom="10dp"
+
                         android:checked="true"
                         android:fontFamily="@font/segoeui"
                         android:gravity="left"
                         android:text="Repetir"
                         android:textColor="#000000"
                         android:textSize="16sp"
-                        android:textStyle="bold" /><!--gravity of the Switch-->
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:thumb="@drawable/ic_baseline_circle_24"
+                        android:track="@drawable/track_selector" /><!--gravity of the Switch-->
 
                 </LinearLayout>
 
@@ -261,7 +267,7 @@
 
                 <EditText
                     android:id="@+id/editTextTextPersonName7"
-                    android:layout_width="366dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="10dp"
@@ -308,7 +314,10 @@
                     android:text="Activar Lectura de Descripción"
                     android:textColor="#000000"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:thumb="@drawable/ic_baseline_circle_24"
+                    android:track="@drawable/track_selector" />
 
                 <Switch
                     android:id="@+id/switch8"
@@ -324,7 +333,10 @@
                     android:text="Sonido de Alarma"
                     android:textColor="#000000"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:thumb="@drawable/ic_baseline_circle_24"
+                    android:track="@drawable/track_selector" />
 
                 <Switch
                     android:id="@+id/switch9"
@@ -340,7 +352,10 @@
                     android:text="Vibración"
                     android:textColor="#000000"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:thumb="@drawable/ic_baseline_circle_24"
+                    android:track="@drawable/track_selector" />
 
                 <Switch
                     android:id="@+id/switch10"
@@ -356,7 +371,19 @@
                     android:text="Grabar nota de voz"
                     android:textColor="#000000"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:thumb="@drawable/ic_baseline_circle_24"
+                    android:track="@drawable/track_selector" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:drawableBottom="@drawable/microphone"
+                    android:textColor="#FFFFFF" />
 
                 <Switch
                     android:id="@+id/switch11"
@@ -372,7 +399,18 @@
                     android:text="Agregar Imagen"
                     android:textColor="#000000"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:thumb="@drawable/ic_baseline_circle_24"
+                    android:track="@drawable/track_selector" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableBottom="@drawable/free_image_icon_png_vector"
+                    android:scrollbarThumbHorizontal="@color/white" />
 
                 <Switch
                     android:id="@+id/switch12"
@@ -388,7 +426,12 @@
                     android:text="Agregar en festivos. Esta configuración la puede hacer en la página web"
                     android:textColor="#000000"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:thumb="@drawable/ic_baseline_circle_24"
+                    android:track="@drawable/track_selector" />
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -396,12 +439,34 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/btnlogin2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="120dp"
+                        android:id="@+id/btncancel"
+                        android:layout_width="85dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="63dp"
                         android:layout_marginTop="50dp"
-                        android:layout_marginEnd="120dp"
+                        android:layout_marginEnd="80dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:width="83dp"
+                        android:background="@color/background"
+                        android:fontFamily="@font/segoeui"
+                        android:text="Cancelar"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="Cancelar" />
+
+                    <Button
+                        android:id="@+id/btnsave"
+                        android:layout_width="85dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginEnd="55dp"
+                        android:layout_marginBottom="50dp"
                         android:background="@drawable/buttonbackground"
                         android:fontFamily="@font/segoeui"
                         android:text="Guardar"
@@ -410,25 +475,9 @@
                         android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
-                        tools:text="Iniciar Sesión" />
+                        tools:text="Guardar" />
 
-                    <Button
-                        android:id="@+id/btnlogin3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="120dp"
-                        android:layout_marginTop="50dp"
-                        android:layout_marginEnd="120dp"
-                        android:layout_weight="1"
-                        android:background="@color/background_variant"
-                        android:fontFamily="@font/segoeui"
-                        android:text="Cancelar"
-                        android:textAlignment="center"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        tools:text="Iniciar Sesión" />
+
                 </LinearLayout>
 
 

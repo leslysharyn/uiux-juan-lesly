@@ -6,38 +6,43 @@
         android:allowBackup="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logomediaalarm"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logomediaalarm"
         android:supportsRtl="true"
         android:theme="@style/MediaAlarm"
         tools:targetApi="31">
         <activity
             android:name=".Settings"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/MediaAlarm"
+            android:label="Configuraciones" >
             <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TusAlarmas" />
         </activity>
         <activity
             android:name=".CreateEditAlarma"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat">
+            android:theme="@style/MediaAlarm"
+            android:label="Crear Alarma">
             <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TusAlarmas" />
         </activity>
         <activity
             android:name=".TusAlarmas"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat">
+            android:theme="@style/MediaAlarm"
+            android:label="Tus Alarmas">
             <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity" />
         </activity>
         <activity
             android:name=".Register"
-            android:theme="@style/Theme.AppCompat">
+            android:theme="@style/MediaAlarm"
+            android:label="Registrarse">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.MainActivity" />
@@ -46,7 +51,7 @@
             android:name=".ui.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/MediaAlarm.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
