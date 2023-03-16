@@ -30,3 +30,83 @@
 
 
 <!-- HEADER ENDS HERE -->
+
+<div class="ajustes-title">
+    <h1>Ajustes. Personalizar tus alarmas</h1>
+</div>
+<div class="square">
+</div>
+<div class="ajustes-subtitle">
+  <h3>Incluye tus festivos</h3>
+</div>
+<div class="div-festivo"></div>
+<div class="festivos-subtitle">
+  <p>Puedes agregar un país específico o manualmente agregar tus días festivos.</p>
+</div>
+<p class="pais">Pais</p>
+<div class="selector">
+  <select name="pais" id="pais" class="select-pais">
+    <option value="Colombia">Colombia</option>
+    <option value="Brasil">Brasil</option>
+    <option value="Guatemala">Guatemala</option>
+    <option value="Argentina">Argentina</option>
+  </select>
+</div>
+
+<button class="button1 button-select">Agregar</button>
+
+<p class="agregar-manual">Agregar los días manualmente</p>
+<ejs-datepicker id="datetimepicker" class="datetimepicker" value="2020-01-01" format="dd/MM/yyyy" placeholder="dd/mm/aaaa" ></ejs-datepicker>
+
+<button class="button1 button-manual">Agregar</button>
+
+<div class="days-container">
+    <div class="days-item">
+      <div class="days-item-container">
+        <div  class="days-item-date">
+          <p>05 May</p>
+        </div>
+        <div class="day-item-info">
+          <p>X</p>
+        </div>
+      </div>
+      <div class="days-item2">
+        <div class="days-item-container">
+          <div  class="days-item-date">
+            <p>09 Ago</p>
+          </div>
+          <div class="day-item-info">
+            <p>X</p>
+          </div>
+        </div>
+        <div class="days-item3">
+          <div class="days-item-container">
+            <div  class="days-item-date">
+              <p>07 Jul</p>
+            </div>
+            <div class="day-item-info">
+              <p>X</p>
+            </div>
+          </div>
+
+    </div>
+</div>
+<p class="lectura-alarma">Lectura de Alarma</p>
+<div class="lectura-alarma-container"></div>
+<p class="configura-voz">Configura la voz que quieres escuchar</p>
+<p class="voz">Voz</p>
+
+<div class="selector2">
+  <select name="voz" id="voz" class="select-voz">
+    <option value="Ricardo Arjona">Ricardo Arjona</option>
+    <option value="Juanes">Juanes</option>
+    <option value="Shakira">Shakira</option>
+    <option value="Papa Noel">Papa Noel</option>
+  </select>
+</div>
+
+<button class="button1 button-aplicar">Aplicar</button>
+
+<button class="button-reestablecer">Reestablecer</button>
+
+<button class="button-guardar">Guardar cambios</button>

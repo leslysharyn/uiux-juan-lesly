@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { MultimediaComponent } from './multimedia/multimedia.component';
 import { AjustesComponent } from './ajustes/ajustes.component';
 import { SyncComponent } from './sync/sync.component';
+import { CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule } from '@syncfusion/ej2-angular-calendars';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SyncComponent } from './sync/sync.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
