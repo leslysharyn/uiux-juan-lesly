@@ -115,3 +115,83 @@
 }
 
 /* HEADER ENDS HERE */
+
+.subtitulo{
+    position: relative;
+    width: auto;
+    height: 60px;
+    left: 75px;
+    top: -50px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.square{
+    position: relative;
+    width: 1260px;
+    height: 331px;
+    background: rgba(225, 43, 43, 0.4);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px 2px 155px;
+    left: 75px;
+    top: -50px;
+}
+#sub {
+    top: -370px;
+    left: 90px;
+}
+
+.square1 {
+    box-sizing: border-box;
+    position: relative;
+    width: 1110px;
+    height: 270px;
+    left: 87px;
+    top: -400px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.fechas_item {
+    position: relative;
+    width: 255px;
+    height: 60px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+    left: 105px;
+    top: -670px;
+    margin-bottom: 60px;
+}
+
+.voiceNote {
+    position: relative;
+    width: 90px;
+    height: 34px;
+    margin-right: 40px;
+    left: 105px;
+    top: -870px;
+    margin-bottom: 110px;
+}
+
+.imagenes {
+    position: relative;
+    top: -845px;
+}
+
+.voiceNote1 {
+    position: relative;
+    width: 141px;
+    height: 91px;
+    margin-right: 40px;
+    left: 105px;
+    top: -870px;
+    margin-bottom: 45px;
+}
