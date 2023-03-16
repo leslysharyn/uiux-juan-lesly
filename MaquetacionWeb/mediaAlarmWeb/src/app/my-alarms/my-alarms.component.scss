@@ -339,3 +339,205 @@ label{
     top: -480PX;
     white-space: nowrap;
 }
+
+.fecha {
+    background-color: none;
+    position: relative;
+    width: 322px;
+    height: 55px;
+    margin: 0 auto;
+    top: -8px;
+}
+
+.fecha_item {
+    position: relative;
+    height: 32px;
+    left: 8px;
+    top: -9px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #201F1E;
+    z-index: 2;
+}
+
+.fecha_info {
+    width: auto;
+    height: 20px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #201F1E;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.fecha_group {
+    position: relative;
+    margin: 0 auto;
+    left: 690PX;
+    top: -533PX;
+    white-space: nowrap;
+}
+
+.toggle1 {
+    position: relative;
+    top: -530px;
+    white-space: nowrap;
+    left: 330px;
+}
+
+.toggle1_item {
+    display: inline-block;
+    margin-right: 30px;
+}
+.toggle1_info {
+    position: relative;
+    width: 81px;
+    height: 25px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.frecuencia_item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.frecuencia {
+    position: relative;
+    margin: 0 auto;
+    left: 575PX;
+    top: -564PX;
+}
+
+.frecuencia_info {
+    width: 148px;
+    height: 25px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.empty {
+    color: #666666;
+}
+
+.frecuencia_list {
+    width: 280px;
+    height: 40px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.semana {
+    position: relative;
+    margin: 0 auto;
+    left: 330PX;
+    top: -540PX;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#myButton {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #201F1E;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0;
+    padding: 0;
+  }
+
+.click1 {
+    background-color: rgba(225, 43, 43, 0.4) !important;
+    font-weight: bold !important;
+}
+
+.click2 {
+    background-color: none !important;
+    font-weight: 400 !important;
+}
+
+.fechas {
+    position: relative;
+    margin: 0 auto;
+    left: -360px;
+    top: 20px;
+}
+
+.toggle2 {
+    position: relative;
+    top: -730px;
+    white-space: nowrap;
+    left: 700px;
+    margin-bottom: 20px;
+}
+
+.toggle2_item {
+    display: inline-block;
+    margin-right: 200px;
+}
+.toggle2_info {
+    position: relative;
+    width: 81px;
+    height: 25px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.button1{
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 131px;
+    height: 36px;
+    margin: 0 auto;
+    background: #005A9E;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    top: -740px;
+    left: 770px;
+    justify-content: center;
+  }
+  .button1:hover {
+    background: #004578; /* Change the button's background color on hover */
+    color: #FFFFFF;
+}
