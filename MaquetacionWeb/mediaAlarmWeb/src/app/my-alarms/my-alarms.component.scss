@@ -519,7 +519,6 @@ label{
 
 .button1{
     position: relative;
-    display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
@@ -535,7 +534,7 @@ label{
     line-height: 16px;
     border: none;
     top: -740px;
-    left: -90px;
+    left: 770px;
     justify-content: center;
   }
   .button1:hover {
