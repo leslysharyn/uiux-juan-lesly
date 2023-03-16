@@ -99,3 +99,91 @@
 
 <label for="time">Hora</label>
 <input type="time" id="time" name="time">
+
+<div class="fecha_group">
+    <p class="fecha_info">Fecha Alarma</p>
+    <mat-form-field class="fecha">
+        <input class="fecha_item" matInput [matDatepicker]="picker" placeholder="Seleccione Fecha">
+        <mat-datepicker-toggle class="fecha_item" matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+</div>
+
+<div class="toggle1">
+    <div class="toggle1_item">
+        <p class="toggle1_info">Repetir</p>
+    </div>
+    <div class="toggle1_item">
+        <mat-slide-toggle class="my-toggle" (change)="onToggleChange($event)"></mat-slide-toggle>
+    </div>
+</div>
+
+<div class="frecuencia">
+    <div class="frecuencia_item">
+        <p class="frecuencia_info">Cada cuánto</p>
+    </div>
+    <div class="frecuencia_item">
+        <select class="frecuencia_list" [(ngModel)]="selectedOption">
+            <option class="empty" value="" disabled selected>Elegir Frecuencia</option>
+            <option value="option1">Diariamente</option>
+            <option value="option2">Semanalmente</option>
+            <option value="option3">Mensualmente</option>
+            <option value="option4">Anualmente</option>
+        </select>
+    </div>
+</div>
+
+<div class="semana">
+    <button id="myButton" (click)="onClick(0)" [ngClass]="{'click1' : isClicked[0], 'click2': !isClicked[0]}">L</button>
+    <button id="myButton" (click)="onClick(1)" [ngClass]="{'click1' : isClicked[1], 'click2': !isClicked[1]}">M</button>
+    <button id="myButton" (click)="onClick(2)" [ngClass]="{'click1' : isClicked[2], 'click2': !isClicked[2]}">MI</button>
+    <button id="myButton" (click)="onClick(3)" [ngClass]="{'click1' : isClicked[3], 'click2': !isClicked[3]}">J</button>
+    <button id="myButton" (click)="onClick(4)" [ngClass]="{'click1' : isClicked[4], 'click2': !isClicked[4]}">V</button>
+    <button id="myButton" (click)="onClick(5)" [ngClass]="{'click1' : isClicked[5], 'click2': !isClicked[5]}">S</button>
+    <button id="myButton" (click)="onClick(6)" [ngClass]="{'click1' : isClicked[6], 'click2': !isClicked[6]}">D</button>
+</div>
+
+<div class="fechas">
+    <div class="fecha_group">
+        <p class="fecha_info">Fecha Inicio</p>
+        <mat-form-field class="fecha">
+            <input class="fecha_item" matInput [matDatepicker]="picker1" placeholder="Seleccione Fecha">
+            <mat-datepicker-toggle class="fecha_item" matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+    </div>
+    <div class="fecha_group">
+        <p class="fecha_info">Fecha Final</p>
+        <mat-form-field class="fecha">
+            <input class="fecha_item" matInput [matDatepicker]="picker2" placeholder="Seleccione Fecha">
+            <mat-datepicker-toggle class="fecha_item" matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+    </div>
+</div>
+
+<div class="toggle2">
+    <div class="toggle2_item">
+        <p class="toggle2_info">No sonar en festivos</p>
+    </div>
+    <div class="toggle2_item">
+        <mat-slide-toggle class="my-toggle" (change)="onToggleChange($event)"></mat-slide-toggle>
+    </div>
+</div>
+<div class="toggle2">
+    <div class="toggle2_item">
+        <p class="toggle2_info">Sonido de alarma</p>
+    </div>
+    <div class="toggle2_item">
+        <mat-slide-toggle class="my-toggle" (change)="onToggleChange($event)"></mat-slide-toggle>
+    </div>
+</div>
+<div class="toggle2">
+    <div class="toggle2_item">
+        <p class="toggle2_info">Vibración</p>
+    </div>
+    <div class="toggle2_item">
+        <mat-slide-toggle class="my-toggle" (change)="onToggleChange($event)"></mat-slide-toggle>
+    </div>
+</div>
+<button class="button1">Agregar alarma</button>
